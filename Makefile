@@ -5,6 +5,7 @@
 # Nicole Narr <narrn@student.ethz.ch>
 # Christopher Reinwardt <creinwar@student.ethz.ch>
 # Paul Scheffler <paulsc@iis.ee.ethz.ch>
+# Seyyid Hikmet Celik <seyyid4091@gmail.com>
 
 XILINX_VIVADO ?= /tools/Xilinx/Vivado/2022.2
 

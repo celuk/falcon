@@ -6,6 +6,7 @@
 # Nils Wistoff <nwistoff@iis.ee.ethz.ch>
 # Cyril Koenig <cykoenig@iis.ee.ethz.ch>
 # Paul Scheffler <cykoenig@iis.ee.ethz.ch>
+# Seyyid Hikmet Celik <seyyid4091@gmail.com>
 
 # Initialize implementation
 set xilinx_root [file dirname [file dirname [file normalize [info script]]]]

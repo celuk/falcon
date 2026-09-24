@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: SHL-0.51
 //
 // Cyril Koenig <cykoenig@iis.ee.ethz.ch>
+// Seyyid Hikmet Celik <seyyid4091@gmail.com>
 
 `ifdef TARGET_VCU128
   `define USE_RESET

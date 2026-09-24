@@ -6,6 +6,7 @@
 // You may obtain a copy of the License at https://solderpad.org/licenses/
 //
 // Original Author: Jean-Roch COULON - Thales
+// Seyyid Hikmet Celik <seyyid4091@gmail.com>
 
 
 package cva6_config_pkg;

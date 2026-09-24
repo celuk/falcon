@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+# Copyright 2026
+# Licensed under the Apache License, Version 2.0, see LICENSE for details.
+# SPDX-License-Identifier: Apache-2.0
+#
+# Seyyid Hikmet Celik <seyyid4091@gmail.com>
 
 import sys
 

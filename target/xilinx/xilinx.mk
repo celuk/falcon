@@ -6,6 +6,7 @@
 # Christopher Reinwardt <creinwar@student.ethz.ch>
 # Cyril Koenig <cykoenig@iis.ee.ethz.ch>
 # Paul Scheffler <paulsc@iis.ee.ethz.ch>
+# Seyyid Hikmet Celik <seyyid4091@gmail.com>
 
 VIVADO ?= vivado
 

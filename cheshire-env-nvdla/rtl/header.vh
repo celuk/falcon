@@ -1,3 +1,9 @@
+// Copyright 2026
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+//
+// Seyyid Hikmet Celik <seyyid4091@gmail.com>
+
 `define COMMON_CELLS_ASSERTS_OFF 1
 `define ASSERTS_OFF 1
 `define TARGET_SYNTHESIS

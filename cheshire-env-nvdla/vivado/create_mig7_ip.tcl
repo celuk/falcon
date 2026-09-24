@@ -1,3 +1,9 @@
+# Copyright 2026
+# Licensed under the Apache License, Version 2.0, see LICENSE for details.
+# SPDX-License-Identifier: Apache-2.0
+#
+# Seyyid Hikmet Celik <seyyid4091@gmail.com>
+
 set proj "mig_7series_0"
 set top_path "C:/Users/2640084/Desktop/ubuntu/shared/projects/cheshire-env-nvdla"
 set project_root "${top_path}/vivado/cheshire_genesys2"

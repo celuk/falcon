@@ -21,6 +21,18 @@ You can cite the paper (accepted but not published yet) as:
 
 The NVDLA configuration bus (CSB) is connected to the Cheshire regbus and mapped at `0x40000000`, the NVDLA data backbone (DBB) is an AXI-4 master on the crossbar and its interrupt is a PLIC source. From the Cheshire peripherals only UART, PLIC and CLINT are enabled. SoC and NVDLA share a single 50 MHz clock domain.
 
+For my other tryings, some missing parts here, simulations, development process you can check these other repos:
+
+https://github.com/celuk/cheshire-env
+
+https://github.com/celuk/cheshire-env-nvdla
+
+https://github.com/celuk/cheshire-env-nvdla-g2
+
+https://github.com/celuk/cheshire-linux
+
+https://github.com/celuk/cheshire-linux-nvdla
+
 ## Environment Setup
 
 Clone the repo and update the submodules:
@@ -67,7 +79,7 @@ For other Cheshire targets and the general flow you may check the [Cheshire docs
 
 ## Linux Boot
 
-Linux, OpenSBI, BusyBox and the NVDLA software stack (KMD and UMD) ported for this SoC are here:
+Linux, OpenSBI, BusyBox and the NVDLA software stack (KMD and UMD) ported for this SoC is here:
 
 https://github.com/celuk/falcon-linux
 

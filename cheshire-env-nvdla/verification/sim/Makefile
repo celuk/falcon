@@ -1,3 +1,9 @@
+# Copyright 2026
+# Licensed under the Apache License, Version 2.0, see LICENSE for details.
+# SPDX-License-Identifier: Apache-2.0
+#
+# Seyyid Hikmet Celik <seyyid4091@gmail.com>
+
 .PHONY: all
 all: 
 	@echo "What are you expecting? (￣ー￣)";
@@ -14,8 +20,7 @@ air_icarus:
 
 .PHONY: air_program
 air_program:
-#	@export XILINX_VIVADO=/tools/Xilinx/Vivado/2022.2;
-	@export XILINX_VIVADO=/home/kasirga/work/xilinx/tools/Xilinx/Vivado/2022.2; \
+	@export XILINX_VIVADO=/tools/Xilinx/Vivado/2022.2;
 	python3 ./main.py --sim xcelium --test tb_air_program --top  cheshire_soc_wrap --waves true --cfile=$(CFILE)
 
 .PHONY: clean

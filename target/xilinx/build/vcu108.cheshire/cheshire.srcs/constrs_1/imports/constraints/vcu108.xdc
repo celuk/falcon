@@ -1,7 +1,9 @@
-# Copyright 2026 ETH Zurich and University of Bologna.
+# Copyright 2026
 # Solderpad Hardware License, Version 0.51, see LICENSE for details.
 # SPDX-License-Identifier: SHL-0.51
 #
+# Seyyid Hikmet Celik <seyyid4091@gmail.com>
+
 # Derived from: VCU108_Rev1.0_U1_04222015.xdc
 
 #############

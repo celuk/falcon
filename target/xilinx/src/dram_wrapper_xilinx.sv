@@ -4,6 +4,7 @@
 //
 // Cyril Koenig <cykoenig@iis.ee.ethz.ch>
 // Paul Scheffler <paulsc@iis.ee.ethz.ch>
+// Seyyid Hikmet Celik <seyyid4091@gmail.com>
 //
 // Resize AXI AW, IW, and DW before connecting to a Xilinx DRAM controller.
 
