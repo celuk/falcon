@@ -91,3 +91,5 @@ typescript*
 temp/*
 
 .bender/git/db/*
+
+.Xil/*

@@ -42,7 +42,7 @@ pico:
 
 .PHONY: program
 program:
-	$(XILINX_VIVADO)/bin/vivado -mode batch -nolog -nojournal -source program_vcu108.tcl -tclargs $(ARGS)
+	$(XILINX_VIVADO)/bin/vivado -mode batch -nolog -nojournal -source util/program_vcu108.tcl -tclargs $(ARGS)
 
 .PHONY: program_linux
 program_linux:
@@ -57,9 +57,9 @@ reset:
 
 .PHONY: program_linux_problematic_cable plpc
 program_linux_problematic_cable:
-	@sed -i 's/set_property PARAM\.FREQUENCY [0-9]\+/set_property PARAM.FREQUENCY 3000000/g' program_vcu108.tcl;
+	@sed -i 's/set_property PARAM\.FREQUENCY [0-9]\+/set_property PARAM.FREQUENCY 3000000/g' util/program_vcu108.tcl;
 	-$(MAKE) program ARGS="/home/shc/projects/cheshire-env-nvdla-g2/target/xilinx/build/vcu108.cheshire/cheshire.runs/impl_1/cheshire_top_xilinx.bit";
-	sed -i 's/set_property PARAM\.FREQUENCY [0-9]\+/set_property PARAM.FREQUENCY 5000000/g' program_vcu108.tcl;
+	sed -i 's/set_property PARAM\.FREQUENCY [0-9]\+/set_property PARAM.FREQUENCY 5000000/g' util/program_vcu108.tcl;
 	-$(MAKE) program ARGS="/home/shc/projects/cheshire-env-nvdla-g2/target/xilinx/build/vcu108.cheshire/cheshire.runs/impl_1/cheshire_top_xilinx.bit";
 	python3 cheshire-env-nvdla/tools/uart_send_data_to_dram.py -f /home/shc/projects/cheshire-linux-nvdla/riscv-opensbi-port/platform/template/custom.dtb.hex -p /dev/ttyUSB$(ARGS) -sa 0x00140000 -b 115200 -pb 921600;
 	python3 cheshire-env-nvdla/tools/uart_send_data_to_dram.py -f /home/shc/projects/cheshire-linux-nvdla/riscv-linux-port/arch/riscv/boot/Image.hex -p /dev/ttyUSB$(ARGS) -sa 0x00200000 -b 115200 -pb 921600;
