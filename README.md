@@ -47,6 +47,10 @@ For the FPGA flow you also need Vivado 2022.2 (set `XILINX_VIVADO` in [`Makefile
 
 ## Running on a FPGA
 
+Cheshire did not support VCU108, so I ported it and added the VCU108 support to Cheshire in this PR that you can check:
+
+https://github.com/pulp-platform/cheshire/pull/264
+
 Build the VCU108 bitstream (Xilinx IPs are generated first, so it takes a while):
 
 ```bash
@@ -97,7 +101,9 @@ Starting shell...
 creating new runtime context...
 ```
 
-**Note:** Some paths in [`Makefile`](Makefile) are left as absolute local paths, so fix them for your machine before running them.
+To load same program from JTAG instead of UART you can check [`load_fw.gdb`](util/load_fw.gdb). In one terminal run `make jtag` and in another run `make gdb` and enter the commands in [`load_fw.gdb`](util/load_fw.gdb) script or directly source it in the gdb terminal, after done you can see same shell in the third terminal you did e.g. `make pico 1`.
+
+**Note:** Some paths in [`Makefile`](Makefile) and other related files are left as absolute local paths, so fix them for your machine before running them.
 
 ## Code References
 
