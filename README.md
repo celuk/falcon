@@ -101,7 +101,7 @@ Starting shell...
 creating new runtime context...
 ```
 
-To load same program from JTAG instead of UART you can check [`load_fw.gdb`](util/load_fw.gdb). In one terminal run `make jtag` and in another run `make gdb` and enter the commands in [`load_fw.gdb`](util/load_fw.gdb) script or directly source it in the gdb terminal, after done you can see same shell in the third terminal you did e.g. `make pico 1`.
+To load same program from JTAG instead of UART you can check [`load_fw.gdb`](util/load_fw.gdb). For JTAG you don't need additional hardware since we are using internal USB JTAG of FPGA. In one terminal run `make jtag` and in another run `make gdb` and enter the commands in [`load_fw.gdb`](util/load_fw.gdb) script or directly source it in the gdb terminal, after done you can see same shell in the third terminal you did e.g. `make pico 1`.
 
 **Note:** Some paths in [`Makefile`](Makefile) and other related files are left as absolute local paths, so fix them for your machine before running them.
 
