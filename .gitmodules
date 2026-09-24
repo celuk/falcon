@@ -8,4 +8,4 @@
 	ignore = dirty
 [submodule "falcon-linux"]
 	path = falcon-linux
-	url = https://github.com/celuk/falcon-linux
+	url = https://github.com/gdrlab/falcon-linux

@@ -38,7 +38,7 @@ https://github.com/celuk/cheshire-linux-nvdla
 Clone the repo and update the submodules:
 
 ```bash
-git clone https://github.com/celuk/falcon
+git clone https://github.com/gdrlab/falcon
 ```
 
 ```bash
@@ -81,7 +81,7 @@ For other Cheshire targets and the general flow you may check the [Cheshire docs
 
 Linux, OpenSBI, BusyBox and the NVDLA software stack (KMD and UMD) ported for this SoC is here:
 
-https://github.com/celuk/falcon-linux
+https://github.com/gdrlab/falcon-linux
 
 U-Boot is not used. The boot payload is written into DRAM over UART (or JTAG) and then the modified zero stage bootloader in the bootrom jumps to OpenSBI, which boots the kernel with an embedded BusyBox initramfs. `opendla.ko` is loaded automatically at init.
 
